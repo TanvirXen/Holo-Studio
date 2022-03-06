@@ -2,6 +2,7 @@ import Head from 'next/head'
 import { Container,Row,Col } from "react-bootstrap"
 import Image from 'next/image'
 import dummy from '../public/images/dummy.png'
+import Card from '../Components/Card'
 export default function Work() {
   return (
     <div>
@@ -16,42 +17,16 @@ export default function Work() {
         <br />
      <div className="customContainer" style={{minHeight:'600px'}}>
        <Row>
-         <Col xl={6} lg={6} md={6}>
-           <div className='card1'>
-            <div><Image src={dummy} height={482} width={850}/></div>
-            <div>
-              <h2>Daktar Bondhu - Reimagining a healthcare brand</h2>
-              <p className="body">Bringing the idea of a boutique tea shop to life with visual brand identity and packaging.</p>
-            </div>
-           </div>
-         </Col>
-         <Col xl={6} lg={6} md={6}>
-           <div className='card1'>
-            <div><Image src={dummy} height={482} width={850}/></div>
-            <div>
-              <h2>Daktar Bondhu - Reimagining a healthcare brand</h2>
-              <p className="body">Bringing the idea of a boutique tea shop to life with visual brand identity and packaging.</p>
-            </div>
-           </div>
-         </Col>
-         <Col xl={6} lg={6} md={6}>
-           <div className='card1'>
-            <div><Image src={dummy} height={482} width={850}/></div>
-            <div>
-              <h2>Daktar Bondhu - Reimagining a healthcare brand</h2>
-              <p className="body">Bringing the idea of a boutique tea shop to life with visual brand identity and packaging.</p>
-            </div>
-           </div>
-         </Col>
-         <Col xl={6} lg={6} md={6}>
-           <div className='card1'>
-            <div><Image src={dummy} height={482} width={850}/></div>
-            <div>
-              <h2>Daktar Bondhu - Reimagining a healthcare brand</h2>
-              <p className="body">Bringing the idea of a boutique tea shop to life with visual brand identity and packaging.</p>
-            </div>
-           </div>
-         </Col>
+       <Card/>
+         <Card/>
+         <Card/>
+         <Card/>
+         <Card/>     
+         <Card/>
+         <Card/>
+         <Card/>
+         <Card/>
+         <Card/>
        </Row>
      </div>
     </main>

@@ -8,8 +8,8 @@ export default function NavbarPC() {
 		<div className="customContainer">
 				<Row style={{ height: "10vh" }}>
 					<Col xl={6} lg={4} md={4}>
-						<div style={{ marginTop: "20px !important" }}>
-							<Image
+						<div className="pdinT-20">
+							<img
 								src="/images/logo.svg"
 								alt="Logo"
 								width={100}

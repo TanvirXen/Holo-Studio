@@ -6,7 +6,9 @@ body {
   margin: 0;
   font-family: 'Space Grotesk', sans-serif !important;
 }
-
+header{
+  padding-top: 10px;
+}
 a {
   color: inherit;
   text-decoration: none;
@@ -47,6 +49,20 @@ line-height: 110%;
   line-height: 110%;
   font-weight: 300;
 }
+.heading2{
+  font-family: Space Grotesk;
+font-style: normal;
+font-weight: bold;
+font-size: 24px;
+line-height: 30px;
+}
+.heading3{
+  font-family: Space Grotesk;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 26px;
+}
 .body{
   font-style: normal;
 font-weight: normal;
@@ -64,11 +80,24 @@ line-height: 20px;
 letter-spacing: 0.05em;
 text-transform: uppercase;
 }
+.t1t2{
+  font-size: 80px;
+  line-height: 110%;
+}
 h2{
 font-style: normal;
 font-weight: bold;
 font-size: 24px;
 line-height: 30px;
+}
+.bytton1{
+  font-family: Space Grotesk;
+font-style: normal;
+font-weight: bold;
+font-size: 16px;
+line-height: 20px;
+
+color: #FFFFFF;
 }
 /* typography */
 
@@ -87,10 +116,7 @@ line-height: 30px;
   .SbuttonBlack{
     border: 2px solid #ffffff;
     box-sizing: border-box;
-    
     border-radius: 41px;
-    width: 142px;
-    height: 51px;
     padding: 10px 20px;
     }
 /* Buttons */
@@ -110,7 +136,11 @@ line-height: 30px;
   margin: 20px 8px;
 }
 
-
+.foot{
+  display: flex;
+  padding-top: 80px;
+  justify-content: flex-end;
+}
 
 .card1{
   margin-bottom: 40px;
@@ -124,7 +154,66 @@ line-height: 30px;
 .customContainer{
   margin-left: 100px;
   margin-right: 100px;
+ 
 }
+.height500{
+  height: 500px;
+}
+.pdinT-20{
+  padding-top: 20px;
+}
+.pdinT-10{
+  padding-top: 10px;
+}
+.pdinT-80{
+  padding-top: 80px;
+}
+.pdinT-100{
+  padding-top: 100px;
+}
+.hamburger{
+  background: #FFFFFF;
+  max-height: 50px;
+  min-height: 50px;
+  display: flex;
+  justify-content: space-between;
+  width: 100vw;
+}
+.hamburgera{
+  background: #000000;
+  max-height: 50px;
+  min-height: 50px;
+  display: flex;
+  justify-content: space-between;
+  width: 100vw;
+}
+.ham {
+  text-align: start;
+}
+.ham ul {
+  padding-inline-start: 12px;
+}
+.ham ul li {
+  list-style:none;
+  color: #002169  ;
+  padding-top: 32px;
+}
+
+.ham ul a {
+  font-family: Space Grotesk;
+font-style: normal;
+font-weight: bold;
+font-size: 24px;
+line-height: 30px;
+color: #FFFFFF;
+
+
+}
+
+.ham ul a:hover{
+    color:#C7CFDF;
+}
+
 /* Responsive */
 @media screen and (max-width: 1140px) {
 
@@ -139,12 +228,27 @@ line-height: 30px;
     margin-left: 100px;
     margin-right: 100px;
   }
+  .foot{
+    display: flex;
+    padding-top: 80px;
+    justify-content: flex-start;
+  }
   }
 @media screen and (max-width: 768px) {
 
+  .pdinT-80M{
+    padding-top: 80px;
+  }
   .customContainer{
     margin-left: 40px;
     margin-right: 40px;
+  }
+  .t1t2{
+    font-style: normal;
+    /* font-weight: normal; */
+    font-size: 60px;
+    line-height: 110%;
+    font-weight: 300;
   }
   }
 @media screen and (max-width: 576px) {

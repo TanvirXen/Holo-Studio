@@ -2,6 +2,7 @@ import Head from 'next/head'
 import { Container,Row,Col } from "react-bootstrap"
 import Image from 'next/image'
 import dummy from '../public/images/dummy.png'
+import Card from '../Components/Card'
 export default function Home() {
   return (
     <div>
@@ -12,54 +13,23 @@ export default function Home() {
         
       </Head>
     <main>
-     <div className="customContainer" style={{height:'80vh'}}>
+     <div className="customContainer height500">
        <Row>
-         <Col xl={7} style={{height:'50vh',marginTop:'30vh'}}>
-           <p className="title1">We empower<br/> solving problems</p>
+         <Col xl={7}>
+           <p className="t1t2 pdinT-100">We empower solving problems</p>
            <p className="body"> We exist to design a better world together. We try to understand the problems around us while we solve them one at a time.</p>
             <p className='overline'>Scroll to see Featured work</p>
          </Col>
-         <Col xs={5}style={{height:'40vh',marginTop:'30vh'}}></Col>
+         <Col xs={5}></Col>
        </Row>
      </div>
-     <div className="customContainer" style={{minHeight:'600px'}}>
+     <div className="customContainer pdinT-80M" style={{minHeight:'600px'}}>
        <Row>
-         <Col xl={6} lg={6} md={6}>
-           <div className='card1'>
-            <div><Image src={dummy} height={482} width={850}/></div>
-            <div>
-              <h2>Daktar Bondhu - Reimagining a healthcare brand</h2>
-              <p className="body">Bringing the idea of a boutique tea shop to life with visual brand identity and packaging.</p>
-            </div>
-           </div>
-         </Col>
-         <Col xl={6} lg={6} md={6}>
-           <div className='card1'>
-            <div><Image src={dummy} height={482} width={850}/></div>
-            <div>
-              <h2>Daktar Bondhu - Reimagining a healthcare brand</h2>
-              <p className="body">Bringing the idea of a boutique tea shop to life with visual brand identity and packaging.</p>
-            </div>
-           </div>
-         </Col>
-         <Col xl={6} lg={6} md={6}>
-           <div className='card1'>
-            <div><Image src={dummy} height={482} width={850}/></div>
-            <div>
-              <h2>Daktar Bondhu - Reimagining a healthcare brand</h2>
-              <p className="body">Bringing the idea of a boutique tea shop to life with visual brand identity and packaging.</p>
-            </div>
-           </div>
-         </Col>
-         <Col xl={6} lg={6} md={6}>
-           <div className='card1'>
-            <div><Image src={dummy} height={482} width={850}/></div>
-            <div>
-              <h2>Daktar Bondhu - Reimagining a healthcare brand</h2>
-              <p className="body">Bringing the idea of a boutique tea shop to life with visual brand identity and packaging.</p>
-            </div>
-           </div>
-         </Col>
+         <Card/>
+         <Card/>
+         <Card/>
+         <Card/>
+         <Card/>
        </Row>
      </div>
     </main>

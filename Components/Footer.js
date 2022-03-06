@@ -4,14 +4,14 @@ export default function Footer(){
         <div style={{backgroundColor:'#000000',minHeight:'550px',marginTop:'80px'}}>
             <div className="customContainer">
                 <Row >
-                    <Col lg={6} style={{marginTop:'80px'}}>
+                    <Col lg={6} style={{marginTop:'80px'}} xs={12}>
                         <p className="title2" style={{color:'#ffffff'}}>
                         We help you solve your problems
                         </p>
-                        <div className="SbuttonBlack" style={{marginTop:'30px'}}><p className='link2 ' style={{color:'#ffffff'}}>Contact</p></div>
+                        <div className="SbuttonBlack" style={{marginTop:'30px',width:'152px',height:'52px'}}><p className='link2 ' style={{color:'#ffffff'}}>Contact</p></div>
                     </Col>
-                    <Col lg={6}style={{marginTop:'80px',display:'flex',justifyContent:'flex-end'}}>
-                        <div style={{padding:'0px 150px'}}>
+                    <Col lg={6} className='foot' xs={12}>
+                        <div style={{padding:'0px 80px 0px 0px'}}>
                             <p className="overline" style={{color:'#ffffff'}}>Social</p>
                             <p className='link1'  style={{color:'#fff'}}>Linkedin</p>
                             <p className='link1' style={{color:'#fff'}}>Facebook</p>
@@ -19,7 +19,7 @@ export default function Footer(){
                             <p className='link1' style={{color:'#fff'}}>Twitter</p>
                         
                         </div>
-                        <div style={{paddingRight:'80px'}}>
+                        <div style={{paddingRight:'10px'}}>
                             <p className="overline" style={{color:'#ffffff'}}>Around</p>
                             <p className='link1'  style={{color:'#fff'}}>Home</p>
                             <p className='link1' style={{color:'#fff'}}>Work</p>
