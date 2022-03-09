@@ -11,7 +11,6 @@ const singleworkQuery = `*[_type=="work" &&_id == $id]{...,
 
 function Work({ works }) {
 	const data = works[0];
-	console.log(data);
 	return (
 		<div>
 			<div className="customContainer pdinB-80" style={{ minHeight: "200px" }}>
@@ -37,7 +36,7 @@ function Work({ works }) {
 						<div style={{ padding: "10px 20px 10px 0px" }}>
 							{" "}
 							<p className="heading2 pdinT-80">The Team</p>
-							{data.team.map((e) => {
+							{data.team?.map((e) => {
 								return (
 									<p className="body" key={e.author}>
 										{" "}
@@ -49,7 +48,7 @@ function Work({ works }) {
 						<div style={{ padding: "10px 20px 10px 0px" }}>
 							{" "}
 							<p className="heading2 pdinT-80">Scope</p>
-							{data.scope.map((e) => {
+							{data.scope?.map((e) => {
 								return (
 									<p className="body" key={e}>
 										{" "}
@@ -63,7 +62,7 @@ function Work({ works }) {
 			</div>
 			<div className="customContainer pdinB-80" style={{ minHeight: "200px" }}>
 				<Row>
-					{data.images.map((e) => {
+					{data.images?.map((e) => {
 						return (
 							<Col md={12} key={e.key}>
 								<img  src={imageUrlFor(e)} alt=""  className="wImg"/>
