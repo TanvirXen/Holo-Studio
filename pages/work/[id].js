@@ -32,7 +32,7 @@ function Work({ works }) {
 							finally design the whole brand.
 						</p>
 					</Col>
-					<Col md={6} style={{ display: "flex", justifyContent: "flex-end" }}>
+					<Col md={6} className='scope'>
 						<div style={{ padding: "10px 20px 10px 0px" }}>
 							{" "}
 							<p className="heading2 pdinT-80">The Team</p>

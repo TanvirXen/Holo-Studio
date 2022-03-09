@@ -198,6 +198,10 @@ color: #FFFFFF;
   width: 100%;
   height: 400px; 
 }
+.scope{
+  display: flex;
+  justify-content: flex-end;
+}
 .wImg{
   width: 100%;
   height: auto; 
@@ -276,6 +280,10 @@ color: #FFFFFF;
   }
   }
 @media screen and (max-width: 768px) {
+  .scope{
+    display: flex;
+    justify-content: flex-start;
+  }
   .pdinT-100M{
     padding-top: 50px;
   }
