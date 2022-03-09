@@ -23,26 +23,26 @@ export default function NavbarPC() {
 						md={8}
 						style={{ display: "flex", justifyContent: "flex-end" }}
 					>
-						<Link href="#">
+						<Link href="/">
 							<p className="link1 padding1">Home</p>
 						</Link>
-						<Link href="#">
+						<Link href="/work">
 							<p className="link1 padding1">Work</p>
 						</Link>
-						<Link href="#">
+						<Link href="/services">
 							<p className="link1 padding1">Services</p>
 						</Link>
-						<Link href="#">
+						<Link href="/careers">
 							<p className="link1 padding1">Careers</p>
 						</Link>
-						<Link href="#">
+						<Link href="/research">
 							<p className="link1 padding1">R&D</p>
 						</Link>
-						<Link href="#">
+						<Link href="/about">
 							<p className="link1 padding1">About</p>
 						</Link>
 						<div className="Sbutton margin1">
-							<p className="link1 ">Contact</p>
+							<p className="link1 " style={{padding:'0px'}}>Contact</p>
 						</div>
 					</Col>
 				</Row>

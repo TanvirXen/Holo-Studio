@@ -56,7 +56,7 @@ function NavbarM() {
 </div>
 <div style={{width:'200px',paddingTop:'60px',paddingLeft:'12px'}}>
     <p className="heading3" style={{color:'#fff'}}>We help you solve your problems</p>
-    <div className="SbuttonBlack" style={{width:'144px',height:'42px',textAlign:'center'}}><p className='bytton1' style={{color:'#ffffff'}}>Get in touch</p></div>
+    <div className="SbuttonBlack" style={{width:'144px',height:'42px',textAlign:'center',marginTop:'28px'}}><p className='bytton1' style={{color:'#ffffff'}}>Get in touch</p></div>
 </div>
             </Box>
         </Drawer>

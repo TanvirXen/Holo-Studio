@@ -3,7 +3,13 @@ import { Container,Row,Col } from "react-bootstrap"
 import Image from 'next/image'
 import dummy from '../public/images/dummy.png'
 import Card from '../Components/Card'
-export default function Home() {
+import sanity from "../lib/sanity";
+import BlockContent from "@sanity/block-content-to-react";
+const workQuery = `*[_type=="work"]{...,
+    team[]->}`;
+
+
+    const Start = ({ works }) => { 
   return (
     <div>
       <Head>
@@ -25,14 +31,20 @@ export default function Home() {
      </div>
      <div className="customContainer pdinT-80M" style={{minHeight:'600px'}}>
        <Row>
-         <Card/>
-         <Card/>
-         <Card/>
-         <Card/>
-         <Card/>
+       {works.map((e)=>{
+  return (<Card image={e.card} title={e.title} description={e.description} key={e.title}/>)
+})}
        </Row>
      </div>
     </main>
     </div>
   )
 }
+export const getStaticProps = async () => {
+  const works = await sanity.fetch(workQuery);
+
+  return {
+    props: { works } 
+};
+}
+export default Start
