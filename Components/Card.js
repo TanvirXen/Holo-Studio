@@ -14,12 +14,11 @@ export default function Card({image,title,description,id}){
             pathname: '/work/'+id
           })
         }}>
-        <div className='card1'>
+        <div className='card1 '>
          <div><img src={imageUrlFor(image)
-                        .ignoreImageParams()
                         } className='cardimg' alt="Card Image"/></div>
          <div>
-           <h2>{title}</h2>
+           <h2 className="pt-2">{title}</h2>
            <p className="body text">{description}</p>
          </div>
         </div>

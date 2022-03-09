@@ -25,7 +25,7 @@ function About({works}) {
 				<div className="customContainer">
 				</div>
 			</div>
-			<div className="customContainer" 	style={{ minHeight: "450px"}}>
+			<div className="customContainer  pdinB-80" 	style={{ minHeight: "450px"}}>
 				<Row>
 					<Col md={6}>
 						<h1
@@ -63,7 +63,7 @@ We identify opportunities you can uniquely own by analysing your business, your 
 					</Row>
 				</div>
 			</div>
-            <div className="customContainer" 	style={{ minHeight: "450px"}}>
+            <div className="customContainer " 	style={{ minHeight: "450px"}}>
 				<Row>
 					<Col md={6}>
 						<h1
