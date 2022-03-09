@@ -198,6 +198,10 @@ color: #FFFFFF;
   width: 100%;
   height: 400px; 
 }
+.wImg{
+  width: 100%;
+  height: auto; 
+}
 .text {
   overflow: hidden;
   text-overflow: ellipsis;

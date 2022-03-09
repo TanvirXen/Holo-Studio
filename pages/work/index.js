@@ -21,7 +21,7 @@ const workQuery = `*[_type=="work"]{...,
      <div className="customContainer" style={{minHeight:'600px'}}>
        <Row>
 {works.map((e)=>{
-  return (<Card image={e.card} title={e.title} description={e.description} key={e.title}/>)
+  return (<Card image={e.card} title={e.title} description={e.description} key={e.title} id={e._id}/>)
 })}
        </Row>
      </div>
