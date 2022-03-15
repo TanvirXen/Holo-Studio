@@ -143,10 +143,7 @@ export default function Services() {
 			<div className="customContainer">
 				<Row>
 					<Col md={12}>
-						<h1
-							className="title1 pt-10 w80"
-							style={{ color: "#131313"}}
-						>
+						<h1 className="title1 pt-10 w80" style={{ color: "#131313" }}>
 							“We want to understand the problems of self learning in the market
 							and introduce a solution for it”
 						</h1>

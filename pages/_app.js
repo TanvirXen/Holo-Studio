@@ -1,6 +1,7 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../styles/globals.css'
 import { createTheme, ThemeProvider } from '@mui/material/styles';
+import 'animate.css';
 import Layout from '../Components/Layout'
 const outerTheme = createTheme({
   palette: {

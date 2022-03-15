@@ -32,7 +32,7 @@ function Work({ works }) {
 							finally design the whole brand.
 						</p>
 					</Col>
-					<Col md={6} className='scope'>
+					<Col md={6} className="scope">
 						<div style={{ padding: "10px 20px 10px 0px" }}>
 							{" "}
 							<p className="heading2 pdinT-80">The Team</p>
@@ -65,7 +65,7 @@ function Work({ works }) {
 					{data.images?.map((e) => {
 						return (
 							<Col md={12} key={e.key}>
-								<img  src={imageUrlFor(e)} alt=""  className="wImg"/>
+								<img src={imageUrlFor(e)} alt="" className="wImg" />
 							</Col>
 						);
 					})}
@@ -76,17 +76,14 @@ function Work({ works }) {
 }
 
 export const getStaticPaths = async () => {
-	// Get the paths we want to pre-render based on persons
 	const work = await sanity.fetch(workQuery);
 	const paths = work.map((person) => ({
 		params: { id: person._id },
 	}));
-	// We'll pre-render only these paths at build time.
-	// { fallback: false } means other routes should 404.
+
 	return { paths, fallback: false };
 };
 
-// This function gets called at build time on server-side.
 export const getStaticProps = async ({ params }) => {
 	const works = await sanity.fetch(singleworkQuery, { id: params.id });
 	return { props: { works } };
